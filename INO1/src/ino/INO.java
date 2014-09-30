@@ -41,6 +41,17 @@ public class INO {
         Arrival arrivalOne = new Arrival();
         arrivalOne.setFromPort(airPortGdansk);
         arrivalOne.setToPort(airPortWarszawa);
+        arrivalOne.setId(1);
+        arrivalOne.setNumber("ARR-1");
+        
+        Arrival arrivalTwo = new Arrival();
+        arrivalTwo.setFromPort(airPortWarszawa);
+        arrivalTwo.setToPort(airPortGdansk);
+        arrivalTwo.setId(2);
+        arrivalTwo.setNumber("ARR-2");
+        
+        airPortGdansk.addArrival(arrivalOne);
+        airPortWarszawa.addArrival(arrivalTwo);
     }
     
 }
